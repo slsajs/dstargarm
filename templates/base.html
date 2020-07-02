@@ -20,9 +20,9 @@
                 {% if user.is_authenticated %}
                 <li class="nav-item"><a href="#" class="nav-link">Welcome, {{user.get_username}}</a></li>
                 <li class="nav-item"><a href="{% url 'photo:photo_upload' %}" class="nav-link">Upload</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Logout</a></li>
+                <li class="nav-item"><a href="{% url 'logout' %}" class="nav-link">Logout</a></li>
                 {% else %}
-                <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+                <li class="nav-item"><a href="{% url 'login' %}" class="nav-link">Login</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Signup</a></li>
                 {% endif %}
             </ul>
@@ -32,7 +32,7 @@
     {% endblock %}
 
     <footer class="footer">
-        <p>&copy; 2018 Baepeu. Powered By Django 2</p>
+        <p>&copy; 2020 kim</p>
     </footer>
 </div>
 </body>
